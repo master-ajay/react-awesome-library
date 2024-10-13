@@ -48,4 +48,4 @@ export default tseslint.config({
   },
 })
 ```
-# react-awesome-library
+# react-reawesome-library
