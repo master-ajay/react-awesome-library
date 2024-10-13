@@ -1,11 +1,22 @@
 {
   "name": "react-reawesome-library",
   "private": false,
-  "version": "1.0.2",
+  "version": "1.0.6",
   "description": "A React component library with toaster and button components",
-  "main": "dist/react-components-library.umd.js",
-  "module": "dist/react-components-library.es.js",
+  "main": "dist/react-reawesome-library.umd.js",
+  "module": "dist/react-reawesome-library.es.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src/**/*.css",
+    "dist/style.css"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/react-reawesome-library.es.js",
+      "require": "./dist/react-reawesome-library.umd.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -15,7 +26,8 @@
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-reawesome-library": "^1.0.6"
   },
   "author": "Ajay Pal Rawat",
   "license": "MIT",

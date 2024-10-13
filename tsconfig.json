@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "jsx": "react-jsx",   // For React 17+ (automatic JSX runtime)
+    "jsx": "react-jsx",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "strict": true,
@@ -8,5 +8,9 @@
     "target": "ESNext",
     "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
-  }
+    "declaration": true,
+    "declarationDir": "dist",
+    "outDir": "dist"
+  },
+  "include": ["src"]
 }
